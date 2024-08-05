@@ -11,13 +11,11 @@ import {
 const GraphAndGoals = () => {
   return (
     <div style = {{marginBottom: '18px'}}>
-      <Grid container display="flex" gap={2}>
+      <Grid container display="flex" gap={1} columns={{md: 6.1, xxs: 1}}>
         <Grid
           item
-          lg={7.7}
-          md = {5.85}
-          sm = {5.85}
-          xs = {11.9}
+          md={4.12}
+          xxs = {1}
           style={{
             backgroundColor: "#202028",
             borderRadius: "3px",
@@ -89,11 +87,9 @@ const GraphAndGoals = () => {
         </Grid>
         <Grid
           item
-          lg={4}
-          md = {5.9}
-          sm = {5.8}
-          xs = {11.9}
-          style={{ backgroundColor: "#202028", borderRadius: "3px" }}
+          md={1.85}
+          xss = {1}
+          style={{ backgroundColor: "#202028", borderRadius: "3px", width: "100%" }}
         >
           <div
             style={{

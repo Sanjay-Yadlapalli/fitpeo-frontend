@@ -102,13 +102,21 @@ const Dashboard = () => {
       style={{ display: "flex", flexDirection: "column", padding: "0px 15px" }}
     >
       <h3 style={{ color: "#E0E0E2", textAlign: "left" }}>Dashboard</h3>
-      <Grid container display="flex" gap={2} marginBottom={2}>
+      <Grid
+        container
+        display="flex"
+        gap={1}
+        // justifyContent="center"
+        // alignItems="center"
+        marginBottom={2}
+        columns={{ xs: 2.08, sm: 2.08, md: 3.08, lg: 6.1 }}
+      >
         <Grid
           item
-          lg={1.8}
-          md = {2.8}
-          sm = {3.8}
-          xs = {5.75}
+          lg={1}
+          md={1}
+          xs={1.01}
+          sm={1.02}
           style={{
             backgroundColor: "#202028",
             borderRadius: "3px",
@@ -159,10 +167,10 @@ const Dashboard = () => {
         </Grid>
         <Grid
           item
-          lg={1.8}
-          md = {2.8}
-          sm = {3.8}
-          xs = {5.75}
+          lg={1}
+          md={1}
+          xs={1.01}
+          sm={1.02}
           style={{
             backgroundColor: "#202028",
             borderRadius: "3px",
@@ -213,10 +221,10 @@ const Dashboard = () => {
         </Grid>
         <Grid
           item
-          lg={1.8}
-          md = {2.8}
-          sm = {3.8}
-          xs = {5.75}
+          lg={1}
+          md={1}
+          xs={1.01}
+          sm={1.02}
           style={{
             backgroundColor: "#202028",
             borderRadius: "3px",
@@ -267,10 +275,10 @@ const Dashboard = () => {
         </Grid>
         <Grid
           item
-          lg={1.8}
-          md = {2.8}
-          sm = {3.8}
-          xs = {5.75}
+          lg={1}
+          md={1}
+          xs={1.01}
+          sm={1.02}
           style={{
             backgroundColor: "#202028",
             borderRadius: "3px",
@@ -321,10 +329,10 @@ const Dashboard = () => {
         </Grid>
         <Grid
           item
-          lg={4}
-          md = {5.85}
-          sm = {7.85}
-          xs = {11.9}
+          lg={1.85}
+          md={2.03}
+          // sm={11.9}
+          xs={2.06}
           style={{
             backgroundColor: "#202028",
             borderRadius: "3px",
@@ -332,19 +340,25 @@ const Dashboard = () => {
           }}
         >
           <Grid container width="100%">
-            <Grid item lg={6} md = {6} sm = {6} xs = {6}>
+            <Grid item lg={6} md={6} sm={6} xs={6}>
               <div style={{}}>
                 <p
                   style={{
                     textAlign: "left",
                     color: "#FFFFF7",
                     fontWeight: "500",
-                    marginLeft: "5px"
+                    marginLeft: "5px",
                   }}
                 >
                   Net Profit
                 </p>
-                <h2 style={{ color: "#FFFFF7", textAlign: "left", marginLeft: "5px" }}>
+                <h2
+                  style={{
+                    color: "#FFFFF7",
+                    textAlign: "left",
+                    marginLeft: "5px",
+                  }}
+                >
                   $6759.25
                 </h2>
                 <div
@@ -361,9 +375,9 @@ const Dashboard = () => {
             </Grid>
             <Grid
               lg={4.8}
-              md = {6}
-              sm = {6}
-              xs = {6}
+              md={6}
+              sm={6}
+              xs={6}
               display="flex"
               justifyContent="center"
               alignItems="center"

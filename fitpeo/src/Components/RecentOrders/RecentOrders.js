@@ -44,17 +44,16 @@ const RecentOrders = () => {
   
   return (
     <div style={{ marginBottom: "18px" }}>
-      <Grid container display="flex" gap={2}>
+      <Grid container display="flex" gap={1} columns={{md: 6.1, xxs: 1}}>
         <Grid
           item
-          lg={7.7}
-          md = {5.85}
-          sm = {5.85}
-          xs = {11.9}
+          md={4.12}
+          xxs = {1}
           style={{
             backgroundColor: "#202028",
             borderRadius: "3px",
-            height: "500px",
+            maxHeight: "500px",
+            paddingBottom: "20px"
           }}
         >
           <h3
@@ -62,7 +61,7 @@ const RecentOrders = () => {
           >
             Recent Orders
           </h3>
-          <div style={{ padding: "10px", height: "80%", overflowY: "scroll" }}>
+          <div style={{ padding: "10px", maxHeight: "80%", overflowY: "scroll" }}>
             <table style={{ width: "100%", borderCollapse: "collapse" }}>
               <thead>
                 <tr
@@ -92,6 +91,7 @@ const RecentOrders = () => {
                       borderBottom: "1px solid grey",
                       position: "sticky",
                       top: "0",
+                      whiteSpace: "nowrap"
                     }}
                   >
                     Order No.
@@ -138,6 +138,7 @@ const RecentOrders = () => {
                             textAlign: "left",
                             padding: "10px",
                             borderBottom: "0.5px solid grey",
+                            whiteSpace: "nowrap"
                           }}
                         >
                           {order.name}
@@ -201,10 +202,8 @@ const RecentOrders = () => {
         </Grid>
         <Grid
           item
-          lg={4}
-          md = {5.9}
-          sm = {5.8}
-          xs = {11.9}
+          md={1.85}
+          xss = {1}
           style={{ backgroundColor: "#202028", borderRadius: "3px" }}
         >
           <div
